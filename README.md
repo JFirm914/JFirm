@@ -12,12 +12,12 @@ The site uses plain HTML, CSS, and vanilla JavaScript; Google Fonts is an option
 
 ## Add a client project
 
-Edit only the `window.clientProjects` array in `projects-data.js` to add a card to [projects.html](./projects.html). Each project entry has:
+Edit only the `window.clientProjects` array in `projects-data.js` to add a card to [projects/](./projects/). Each project entry has:
 
 - `name`: project or client name
 - `url`: full URL to the live website
 - `description`: short card description
-- `image`: path or URL to a thumbnail image, or an empty string to show the placeholder
+- `image`: repository-root-relative path or URL to a thumbnail image, or an empty string to show the placeholder
 
 Example:
 
@@ -36,7 +36,7 @@ Leave the array empty to show the friendly empty state until a project is ready 
 
 ## Publish with GitHub Pages
 
-1. Push the site files (`index.html`, `projects.html`, `plans/`, `styles.css`, `script.js`, `projects-data.js`, `projects-page.js`, `README.md`, and `assets/`) to the `main` branch of the `JFirm914/JFirm` repository.
+1. Push the site files (`index.html`, `projects/`, `plans/`, `styles.css`, `script.js`, `projects-data.js`, `projects-page.js`, `README.md`, and `assets/`) to the `main` branch of the `JFirm914/JFirm` repository.
 2. On GitHub, open the repository and select **Settings** → **Pages**.
 3. Under **Build and deployment**, select **Deploy from a branch**.
 4. Choose the `main` branch and the `/ (root)` folder, then select **Save**.

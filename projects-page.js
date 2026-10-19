@@ -9,7 +9,7 @@ function createClientProjectCard(project) {
   if (project.image) {
     const image = document.createElement("img");
     image.className = "client-project-image";
-    image.src = project.image;
+    image.src = new URL(project.image, new URL("../", document.baseURI)).href;
     image.alt = `Screenshot of ${project.name} website`;
     image.width = 960;
     image.height = 540;
